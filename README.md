@@ -21,7 +21,7 @@ python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=https://
 
 
 
-pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2#painting-faces
+pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2
 ```
 
 

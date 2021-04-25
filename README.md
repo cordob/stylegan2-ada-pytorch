@@ -2,7 +2,8 @@
 
 관련 프로젝트
 
-https://github.com/omertov/encoder4editing
+https://github.com/cordob/encoder4editing
+
 
 
 

@@ -1,5 +1,12 @@
 ## StyleGAN2-ADA &mdash; Official PyTorch implementation
 
+관련 프로젝트
+
+https://github.com/omertov/encoder4editing
+
+
+
+
 ```
 git clone  https://github.com/NVlabs/stylegan2-ada-pytorch
 

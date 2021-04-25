@@ -1,5 +1,21 @@
 ## StyleGAN2-ADA &mdash; Official PyTorch implementation
 
+```
+git clone  https://github.com/NVlabs/stylegan2-ada-pytorch
+
+cd stylegan2-ada-pytorch
+
+conda create --name sg2ada-pt python=3.7
+conda activate sg2ada-pt
+
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+
+pip install click requests ninja imageio imageio-ffmpeg tqdm psutil scipy pyspng
+
+```
+
+
+
 ![Teaser image](./docs/stylegan2-ada-teaser-1024x252.png)
 
 **Training Generative Adversarial Networks with Limited Data**<br>

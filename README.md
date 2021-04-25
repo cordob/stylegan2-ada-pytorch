@@ -15,10 +15,15 @@ pip install click requests ninja imageio imageio-ffmpeg tqdm psutil scipy pyspng
 gcc5  :  https://github.com/cordob/conda-gcc5 
 
 
+이미지 생성
 
 python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl 
 
 
+이미지 믹싱 !!!!!   (모핑에 응용)
+
+python style_mixing.py --outdir=out --rows=1500,1501 --cols=333,334 \
+    --network=ffhq.pkl
 
 
 pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2

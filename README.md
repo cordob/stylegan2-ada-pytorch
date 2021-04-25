@@ -17,6 +17,11 @@ gcc5  :  https://github.com/cordob/conda-gcc5
 
 
 python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl 
+
+
+
+
+pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2#painting-faces
 ```
 
 

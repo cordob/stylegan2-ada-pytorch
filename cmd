@@ -1,3 +1,9 @@
+train : 12g 이상 
+
+python dataset_tool.py --source=land --dest=land.zip
+python train.py --outdir=training_runs --data=land.zip --gpus=1
+
+
 이미지 생성
 
 python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl 

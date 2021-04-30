@@ -50,9 +50,12 @@ python projector.py --seed 100 --outdir=out2 --target=j.png --network=ffhq.pkl
 
 
 
+Transfer learning  train !!!!!  512x512
 
+python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqwild.pkl  --gpus=1 --mirror=1
 
 pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2
+
 ```
 
 

@@ -27,6 +27,23 @@ Transfer learning  train !!!!!  512x512
 python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqwild.pkl  --gpus=1 --mirror=1
 
 
+이미지 생성 (Using custom trained network)
+
+python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=training_runs/00001-m3-auto1/network-snapshot-000000.pkl
+
+!sudo apt install imagemagick-6.q16
+
+!montage -mode concatenate -tile 4x4 out/*.png out/result.jpg
+
+from google.colab import files
+from IPython import display
+display.Image("out/result-0.jpg",
+              width=1600)
+              
+
+
+
+
 이미지 생성
 
 python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl 

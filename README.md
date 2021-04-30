@@ -66,6 +66,14 @@ python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-
 
 pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2
 
+
+
+colab  disconnect   방해 명령. : 콘솔창  띄우고.  
+
+function ClickConnect(){
+console.log("Working"); 
+document.querySelector("colab-toolbar-button").click() 
+}setInterval(ClickConnect,60000)
 ```
 
 

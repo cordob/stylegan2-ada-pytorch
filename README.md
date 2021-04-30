@@ -68,6 +68,11 @@ pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2
 
 
 
+train result
+
+!ls training_runs/00001-m3-auto1
+
+
 colab  disconnect   방해 명령. : 콘솔창  띄우고.  
 
 function ClickConnect(){

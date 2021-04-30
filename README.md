@@ -49,6 +49,16 @@ python projector.py --seed 100 --outdir=out2 --target=j.png --network=ffhq.pkl
  python render.py --mp4_fps 30 --filename test --duration_sec 5 --network_pkl  ffhq.pkl
 
 
+preprocess.
+
+python dataset_tool.py --source=m3 --dest=m3.zip  --width=256 --height=256
+
+python dataset_tool.py --source=m3 --dest=m3.zip  --width=512 --height=512
+
+# Original 1024x1024 resolution.
+
+python dataset_tool.py --source=m3 --dest=m3.zip
+
 
 Transfer learning  train !!!!!  512x512
 

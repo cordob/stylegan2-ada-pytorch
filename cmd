@@ -29,6 +29,7 @@ Transfer learning  train !!!!!  512x512
 
 python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqwild.pkl  --gpus=1 --mirror=1
 
+python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res512-mirror-stylegan2-noaug.pkl --gpus=1 --mirror=1
 
 이미지 생성 (Using custom trained network)
 

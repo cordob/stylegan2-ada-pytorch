@@ -6,7 +6,11 @@ python dataset_tool.py --source=m3 --dest=m3.zip  --width=256 --height=256
 
 python dataset_tool.py --source=m3 --dest=m3.zip  --width=512 --height=512
 
-train
+# Original 1024x1024 resolution.
+
+python dataset_tool.py --source=m3 --dest=m3.zip
+
+train !!!!!
 
 python train.py --outdir=training_runs --data=land.zip --gpus=1
 

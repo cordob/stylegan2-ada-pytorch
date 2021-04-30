@@ -1,3 +1,15 @@
+colab  disconnect   방해 명령. : 콘솔창  띄우고.  
+
+function ClickConnect(){
+console.log("Working"); 
+document.querySelector("colab-toolbar-button").click() 
+}setInterval(ClickConnect,60000)
+
+
+
+
+
+
 train : 12g 이상 
 
 pre.

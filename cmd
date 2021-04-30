@@ -10,9 +10,10 @@ python dataset_tool.py --source=m3 --dest=m3.zip  --width=512 --height=512
 
 python dataset_tool.py --source=m3 --dest=m3.zip
 
-train !!!!!
 
-python train.py --outdir=training_runs --data=land.zip --gpus=1
+Transfer learning  train !!!!!  512x512
+
+python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqwild.pkl  --gpus=1 --mirror=1
 
 
 이미지 생성

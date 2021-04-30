@@ -27,9 +27,29 @@ pip install psutil
 gcc5  :  https://github.com/cordob/conda-gcc5 
 
 
+
+
+이미지 생성 (Using custom trained network)
+
+python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=training_runs/00001-m3-auto1/network-snapshot-000000.pkl
+
+!sudo apt install imagemagick-6.q16
+
+!montage -mode concatenate -tile 4x4 out/*.png out/result.jpg
+
+from google.colab import files
+from IPython import display
+display.Image("out/result-0.jpg",
+              width=1600)
+              
+              
+
+
 이미지 생성
 
 python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl 
+
+
 
 
 이미지 믹싱 !!!!!   (모핑에 응용)

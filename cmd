@@ -1,6 +1,13 @@
 train : 12g 이상 
 
-python dataset_tool.py --source=land --dest=land.zip
+pre.
+
+python dataset_tool.py --source=m3 --dest=m3.zip  --width=256 --height=256
+
+python dataset_tool.py --source=m3 --dest=m3.zip  --width=512 --height=512
+
+train
+
 python train.py --outdir=training_runs --data=land.zip --gpus=1
 
 

@@ -1,10 +1,13 @@
 colab  disconnect   방해 명령. : 콘솔창  띄우고.  
 
-
+먼저
 function ClickConnect(){
 console.log("Working"); 
 document.querySelector("colab-toolbar-button").click() 
 }setInterval(ClickConnect, 1800000)
+
+그리고 
+function HidePopUp() { let style = ``; document.head.insertAdjacentHTML("beforeend", style); } HidePopUp();
 
 
 

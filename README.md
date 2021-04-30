@@ -82,9 +82,15 @@ python dataset_tool.py --source=m3 --dest=m3.zip
 
 Transfer learning  train !!!!!  512x512
 
+1
+
 python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqwild.pkl  --gpus=1 --mirror=1
 
 pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2
+
+2
+
+python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res512-mirror-stylegan2-noaug.pkl --gpus=1 --mirror=1
 
 
 

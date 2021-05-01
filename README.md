@@ -101,6 +101,12 @@ python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-
 !python train.py --outdir=training_runs --data='/content/drive/My Drive/m3.zip' --resume=training_runs/00000-m3-mirror-auto1-resumecustom/network-snapshot-000000.pkl --gpus=1 --mirror=1
 
 
+4 pkl file download 
+
+from google.colab import files
+files.download('training_runs/00000-m3-mirror-auto1-resumecustom/network-snapshot-000000.pkl')
+
+
 train result
 
 !ls training_runs/00001-m3-auto1

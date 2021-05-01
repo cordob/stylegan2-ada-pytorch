@@ -27,6 +27,8 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvid
 
 pip install click requests ninja imageio imageio-ffmpeg tqdm psutil scipy pyspng
 
+pip install tensorboard 
+
 pip install psutil
 
 gcc5  :  https://github.com/cordob/conda-gcc5 

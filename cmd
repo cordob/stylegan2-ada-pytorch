@@ -45,6 +45,30 @@ display.Image("out/result-0.jpg",
               width=1600)
               
 
+Transfer learning  train !!!!!  512x512.    (최소 2시간 이상)
+
+1
+
+python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqwild.pkl  --gpus=1 --mirror=1
+
+pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2
+
+2
+
+python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res512-mirror-stylegan2-noaug.pkl --gpus=1 --mirror=1
+
+
+3 중단후 다시 재개
+
+!python train.py --outdir=training_runs --data='/content/drive/My Drive/m3.zip' --resume=training_runs/00000-m3-mirror-auto1-resumecustom/network-snapshot-000000.pkl --gpus=1 --mirror=1
+
+
+4 pkl file download 
+
+from google.colab import files
+files.download('training_runs/00000-m3-mirror-auto1-resumecustom/network-snapshot-000000.pkl')
+
+
 
 
 

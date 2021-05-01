@@ -33,6 +33,9 @@ gcc5  :  https://github.com/cordob/conda-gcc5
 
 python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=training_runs/00001-m3-auto1/network-snapshot-000000.pkl
 
+!python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=training_runs/00000-m3-mirror-auto1-resumecustom/network-snapshot-000000.pkl
+
+
 !sudo apt install imagemagick-6.q16
 
 !montage -mode concatenate -tile 4x4 out/*.png out/result.jpg

@@ -15,6 +15,8 @@ git clone  https://github.com/NVlabs/stylegan2-ada-pytorch
 
 cd stylegan2-ada-pytorch
 
+conda create -n myenv python=3.6
+
 conda create --name sg2ada-pt python=3.7
 conda activate sg2ada-pt
 

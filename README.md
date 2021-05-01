@@ -83,7 +83,7 @@ python dataset_tool.py --source=m3 --dest=m3.zip  --width=512 --height=512
 python dataset_tool.py --source=m3 --dest=m3.zip
 
 
-Transfer learning  train !!!!!  512x512
+Transfer learning  train !!!!!  512x512.    (최소 2시간 이상)
 
 1
 

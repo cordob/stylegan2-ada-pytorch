@@ -40,6 +40,12 @@ pretained  :  https://github.com/cordob/awesome-pretrained-stylegan2
 python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res512-mirror-stylegan2-noaug.pkl --gpus=1 --mirror=1
 
 
+2A  GTX1080TI gpu ram 11g. :  --batch 2 추가 
+
+python train.py --outdir=training_runs --data=m3.zip  --batch 2 --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res512-mirror-stylegan2-noaug.pkl --gpus=1 --mirror=1
+
+
+
 3 중단후 다시 재개
 
 !python train.py --outdir=training_runs --data='/content/drive/My Drive/m3.zip' --resume=training_runs/00000-m3-mirror-auto1-resumecustom/network-snapshot-000000.pkl --gpus=1 --mirror=1

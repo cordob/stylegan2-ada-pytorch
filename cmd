@@ -25,24 +25,6 @@ python dataset_tool.py --source=m3 --dest=m3.zip  --width=512 --height=512
 python dataset_tool.py --source=m3 --dest=m3.zip
 
 
-Transfer learning  train !!!!!  512x512
-
-python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqwild.pkl  --gpus=1 --mirror=1
-
-python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res512-mirror-stylegan2-noaug.pkl --gpus=1 --mirror=1
-
-이미지 생성 (Using custom trained network)
-
-python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=training_runs/00001-m3-auto1/network-snapshot-000000.pkl
-
-!sudo apt install imagemagick-6.q16
-
-!montage -mode concatenate -tile 4x4 out/*.png out/result.jpg
-
-from google.colab import files
-from IPython import display
-display.Image("out/result-0.jpg",
-              width=1600)
               
 
 Transfer learning  train !!!!!  512x512.    (최소 2시간 이상)
@@ -67,6 +49,22 @@ python train.py --outdir=training_runs --data=m3.zip --resume=https://nvlabs-fi-
 
 from google.colab import files
 files.download('training_runs/00000-m3-mirror-auto1-resumecustom/network-snapshot-000000.pkl')
+
+
+5. image generate 
+
+이미지 생성 (Using custom trained network)
+
+python generate.py --outdir=out --trunc=0.7 --seeds=6100-6135 --network=training_runs/00001-m3-auto1/network-snapshot-000000.pkl
+
+!sudo apt install imagemagick-6.q16
+
+!montage -mode concatenate -tile 4x4 out/*.png out/result.jpg
+
+from google.colab import files
+from IPython import display
+display.Image("out/result-0.jpg",
+              width=1600)
 
 
 

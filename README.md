@@ -13,6 +13,7 @@ https://github.com/cordob/restyle-encoder
 ```
 git clone  https://github.com/NVlabs/stylegan2-ada-pytorch
 
+
 cd stylegan2-ada-pytorch
 
 conda create -n myenv python=3.6 or  conda create --name sg2ada-pt python=3.7
@@ -20,9 +21,9 @@ conda create -n myenv python=3.6 or  conda create --name sg2ada-pt python=3.7
 
 conda activate sg2ada-pt
 
-CUDA10.1 BASED
 
-pip install torch==1.7.1+cu101 torchvision==0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
 
 pip install click requests ninja imageio imageio-ffmpeg tqdm psutil scipy pyspng
 

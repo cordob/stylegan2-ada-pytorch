@@ -51,6 +51,11 @@ python train.py --outdir=training_runs --data=m3.zip --snap 2 --resume=https://n
 python train.py --outdir=training_runs --data=m3.zip  --batch 2 --snap 2 --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res512-mirror-stylegan2-noaug.pkl --gpus=1 --mirror=1
 
 
+3  1024 resolution  Transfer learning 
+
+python train.py --outdir=training_runs --data=data.zip --snap 2 --resume=ffhq1024 --gpus=1 --mirror=1
+
+
 
 3 중단후 다시 재개
 

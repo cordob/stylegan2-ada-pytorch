@@ -53,7 +53,7 @@ python train.py --outdir=training_runs --data=m3.zip  --batch 2 --snap 2 --resum
 
 3  1024 resolution  Transfer learning 
 
-python train.py --outdir=training_runs --data=data.zip --snap 2 --resume=ffhq1024 --gpus=1 --mirror=1
+python train.py --outdir=training_runs --data=data.zip --snap 1 --resume=ffhq1024 --gpus=1 --mirror=1
 
 
 

@@ -11,6 +11,12 @@ function HidePopUp() { let style = ``; document.head.insertAdjacentHTML("beforee
 
 
 
+정사각형 이미지로 전처리
+
+for i in *.*; do
+convert  $i -set option:size '%[fx:min(w,h)]x%[fx:min(w,h)]' xc:none +swap -gravity center -composite -resize 1024x1024 $i 
+done
+
 
 train : 12g 이상 
 

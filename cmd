@@ -1,3 +1,11 @@
+관련 프로젝트
+
+https://github.com/cordob/encoder4editing
+
+https://github.com/cordob/restyle-encoder
+
+
+
 colab  disconnect   방해 명령. : 콘솔창  띄우고.  
 
 먼저

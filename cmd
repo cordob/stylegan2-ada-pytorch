@@ -106,8 +106,7 @@ python style_mixing.py --outdir=out --rows=1500,1501 --cols=333,334 \
 
 타겟 이미지 모핑  !!!
 
-python projector.py --seed 100 --outdir=out2 --target=j.png --network=ffhq.pkl 
-
+python projector.py --seed 100 --num-steps 100 --outdir=out2 --target=se1.jpg --network=66.pkl 
 
 
 !!!!!  비디오 생성 (--network_pkl 모델지정)

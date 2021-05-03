@@ -110,7 +110,7 @@ python projector.py --seed 100 --outdir=out2 --target=j.png --network=ffhq.pkl
 
 
 
- 비디오 생성 (--network_pkl 모델지정)
+!!!!!  비디오 생성 (--network_pkl 모델지정)
  
  python render.py --mp4_fps 30 --filename test --duration_sec 5 --network_pkl  ffhq.pkl
 

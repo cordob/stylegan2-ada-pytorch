@@ -109,6 +109,10 @@ python style_mixing.py --outdir=out --rows=1500,1501 --cols=333,334 \
 python projector.py --seed 100 --num-steps 100 --outdir=out2 --target=se1.jpg --network=66.pkl 
 
 
+python generate.py --outdir=out --projected_w=out2/projected_w.npz \
+    --network=metfaces.pkl
+
+
 !!!!!  비디오 생성 (--network_pkl 모델지정)
  
  python render.py --mp4_fps 30 --filename test --duration_sec 5 --network_pkl  ffhq.pkl

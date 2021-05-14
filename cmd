@@ -8,6 +8,8 @@ https://github.com/cordob/restyle-encoder
 
 train 512 ,  1080ti
 
+python dataset_tool.py --source=m3 --dest=m3.zip  --width=512 --height=512
+
 python train.py --outdir=training_runs --data=butterfly512.zip --resume=pkl/ffhq512.pkl  --gpus=1 --mirror=1 --snap 2
 
 

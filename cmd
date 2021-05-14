@@ -6,13 +6,10 @@ https://github.com/cordob/restyle-encoder
 
 
 
-colab  disconnect   방해 명령. : 콘솔창  띄우고.  
+train 512 ,  1080ti
 
-먼저
-function ClickConnect(){
-console.log("Working"); 
-document.querySelector("colab-toolbar-button").click() 
-}setInterval(ClickConnect, 1800000)
+python train.py --outdir=training_runs --data=butterfly512.zip --resume=pkl/ffhq512.pkl  --gpus=1 --mirror=1 --snap 2
+
 
 
 
